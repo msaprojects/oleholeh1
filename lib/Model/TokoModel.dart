@@ -45,7 +45,7 @@ class TokoModel{
 
   @override
   String toString(){
-    return 'TokoModel{idtoko: $id, nama_toko: $nama, aktif: $aktif, alamat: $alamat, latitude: $latitude, longitude: $longitude, gamber: $gambar}';
+    return '{idtoko: $id, nama_toko: $nama, aktif: $aktif, alamat: $alamat, latitude: $latitude, longitude: $longitude, gamber: $gambar}';
   }
 }
 

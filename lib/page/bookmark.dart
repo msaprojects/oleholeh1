@@ -22,6 +22,7 @@ class _BookmarkState extends State<Bookmark> {
             );
           }else if(snapshot.connectionState == ConnectionState.done){
             List<TokoModel> toko = snapshot.data;
+            print(toko);
             return _buildListView(toko);
           }else{
             return Center(

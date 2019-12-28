@@ -1,33 +1,34 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import 'package:oleholeh1/dummy/const.dart';
+import 'package:oleholeh1/dummy/restaurants.dart';
+import 'package:oleholeh1/dummy/trending_item.dart';
 
-import 'package:oleholeh1/Model/ProdukModel.dart';
-
-class OlehOleh extends StatefulWidget{
+class Trending extends StatefulWidget {
   @override
-  _OlehOlehState createState() => _OlehOlehState();
+  _TrendingState createState() => _TrendingState();
 }
 
-class _OlehOlehState extends State<OlehOleh>{
-  final TextEditingController _SearchControl = new TextEditingController();
-  ProdukModel produks;
+class _TrendingState extends State<Trending> {
+  final TextEditingController _searchControl = new TextEditingController();
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        title: Text("Rekomendasi Oleh-Oleh"),
+        title: Text("Trending Restaurants"),
         centerTitle: true,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios),
+          icon: Icon(
+            Icons.arrow_back_ios
+          ),
           onPressed: ()=>Navigator.pop(context),
         ),
       ),
+
       body: Padding(
-        padding: EdgeInsets.fromLTRB(10.0, 0, 10.0, 0),
+        padding: EdgeInsets.fromLTRB(10.0,0,10.0,0),
         child: ListView(
           children: <Widget>[
             Card(
@@ -48,17 +49,13 @@ class _OlehOlehState extends State<OlehOleh>{
                     contentPadding: EdgeInsets.all(10.0),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
-                      borderSide: BorderSide(
-                        color: Colors.white,
-                      ),
+                      borderSide: BorderSide(color: Colors.white,),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.white,
-                      ),
+                      borderSide: BorderSide(color: Colors.white,),
                       borderRadius: BorderRadius.circular(5.0),
                     ),
-                    hintText: "Cari...",
+                    hintText: "Search..",
                     prefixIcon: Icon(
                       Icons.search,
                       color: Colors.black,
@@ -71,28 +68,38 @@ class _OlehOlehState extends State<OlehOleh>{
                       fontSize: 15.0,
                       color: Colors.black,
                     ),
-                  ),maxLines: 1,
-                  controller: _SearchControl,
+                  ),
+                  maxLines: 1,
+                  controller: _searchControl,
                 ),
               ),
             ),
-            SizedBox(height: 10.0,),
+
+
+            SizedBox(height: 10.0),
+
             ListView.builder(
               primary: false,
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
-              // itemCount: ,
-//              itemBuilder: (BuildContext context, int index){
-//                Map product = produks[index] as Map;
-//                return produks(
-//                  idproduk
-//                )
-//              }
+              itemCount: restaurants == null ? 0 :restaurants.length,
+              itemBuilder: (BuildContext context, int index) {
+                Map restaurant = restaurants[index];
+
+                return TrendingItem(
+                  img: restaurant["img"],
+                  title: restaurant["title"],
+                  address: restaurant["address"],
+                  rating: restaurant["rating"],
+                );
+              },
             ),
+
+            SizedBox(height: 10.0),
+
           ],
         ),
       ),
     );
   }
-
 }

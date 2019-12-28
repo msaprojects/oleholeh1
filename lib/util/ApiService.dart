@@ -3,7 +3,7 @@ import 'package:oleholeh1/Model/ProdukModel.dart';
 import 'package:oleholeh1/Model/TokoModel.dart';
 
 class ApiService{
-  final String baseUrl = "http://103.31.46.23:6565";
+  final String baseUrl = "http://192.92.195.201:6565";
   Client client = Client();
 
   Future<List<TokoModel>> getToko() async{
