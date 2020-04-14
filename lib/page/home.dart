@@ -5,7 +5,6 @@ import 'package:oleholeh1/dummy/friends.dart';
 import 'package:oleholeh1/dummy/restaurants.dart';
 import 'package:oleholeh1/dummy/slide_item.dart';
 import 'package:oleholeh1/dummy/trending.dart';
-import 'package:oleholeh1/util/ApiService.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -15,7 +14,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home>{
 
 final TextEditingController _searchControl = new TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     super.build(context);

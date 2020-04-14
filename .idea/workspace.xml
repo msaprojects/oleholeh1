@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="698395e0-54b2-4fcc-9e58-df275cd9126a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/oleholeh1_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/android/oleholeh1_android.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/page/oleh.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/page/oleh.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/page/bookmark.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/page/bookmark.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/page/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/page/home.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -71,8 +66,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,9 +89,12 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="F:/syahrul/Sekolah" />
@@ -157,7 +153,7 @@
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info active="true" anchor="right" id="Flutter Inspector" order="3" visible="true" weight="0.3295129" />
+      <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.3295129" />
       <window_info anchor="right" id="Flutter Outline" order="4" weight="0.3295129" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
     </layout>

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:oleholeh1/Model/TokoModel.dart';
-import 'package:oleholeh1/util/ApiService.dart';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+import 'package:oleholeh1/util/ApiService.dart';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
 class Bookmark extends StatefulWidget {
+  var namatoko;
   @override
   _BookmarkState createState() => _BookmarkState();
 }
@@ -22,7 +23,7 @@ class _BookmarkState extends State<Bookmark> {
             );
           }else if(snapshot.connectionState == ConnectionState.done){
             List<TokoModel> toko = snapshot.data;
-            print(toko);
+            var namatoko = toko;
             return _buildListView(toko);
           }else{
             return Center(
